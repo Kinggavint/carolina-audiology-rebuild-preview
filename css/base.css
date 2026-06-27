@@ -291,6 +291,35 @@ p:last-child { margin-bottom: 0; }
 }
 .hero__card p { font-size: 0.95rem; margin-bottom: 14px; }
 
+/* Hero owner photo */
+.hero__owner {
+  margin: 0 0 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.72);
+  box-shadow: var(--shadow-sm);
+  max-width: 520px;
+}
+.hero__owner img {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  object-fit: cover;
+  object-position: center 20%;
+  border: 2px solid #fff;
+  box-shadow: var(--shadow-sm);
+  flex: 0 0 auto;
+}
+.hero__owner figcaption {
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+}
+
 /* ---------- Service cards ---------- */
 .services-grid {
   display: grid;
