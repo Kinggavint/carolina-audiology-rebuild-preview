@@ -8,161 +8,160 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/layout.css">
 </head>
 <body>
-
-<div class="topbar">
-  <div class="container">
-    <span>4065 Capital Drive, Rocky Mount, NC 27804</span>
-    <span><a href="tel:+12527906649">252-790-6649</a> &nbsp;|&nbsp; Mon to Thu, 9 to 5</span>
-  </div>
+<!-- Top Bar -->
+<div class="top-bar">
+<div class="container">
+<div class="top-bar__left">
+<span class="top-bar__item"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> 4065 Capital Drive, Rocky Mount, NC 27804</span>
+<span class="top-bar__item"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><a href="tel:+12527906649">252-790-6649</a></span>
 </div>
-
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Carolina Audiology Associates"></a>
-    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html#book" class="btn btn-primary">Book Appointment</a></li>
-    </ul>
-  </div>
+<div class="top-bar__right">
+<a class="top-bar__cta top-bar__cta--gold" href="contact.html#book"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="18" rx="2" ry="2" width="18" x="3" y="4"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg> Book Appointment</a>
+<a class="top-bar__cta" href="tel:+12527906649"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Call Us</a>
+</div>
+</div>
+</div>
+<!-- Header -->
+<header class="header">
+<div class="container">
+<a aria-label="Carolina Audiology Associates Home" class="header__logo" href="index.html"><img alt="Carolina Audiology Associates logo" src="assets/img/logo.png" style="height:54px;width:auto;"></a>
+<nav aria-label="Main navigation" class="header__nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<div class="nav-dropdown">
+<a class="nav-dropdown__trigger" href="services.html">Services</a>
+<div class="nav-dropdown__menu">
+<a href="services.html#evaluations">Hearing Evaluations</a>
+<a href="services.html#fittings">Hearing Aid Fittings</a>
+<a href="services.html#repair">Hearing Aid Repair</a>
+<a href="services.html#wax">Earwax Removal</a>
+<a href="services.html#protection">Custom Ear Protection</a>
+<a href="services.html#counseling">Family Counseling</a>
+</div>
+</div>
+<a href="education.html">Education</a>
+<a href="contact.html">Contact</a>
+<a aria-label="Call 252-790-6649" class="header__phone" href="tel:+12527906649"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 252-790-6649</a>
+</nav>
+<button aria-expanded="false" aria-label="Toggle navigation menu" class="header__mobile-toggle"><span></span></button>
+</div>
+<div class="mobile-overlay"></div>
 </header>
+<section class="hero hero--short">
+<div class="hero__bg"><img alt="Carolina Audiology Associates office" height="600" src="assets/img/office-exterior.jpg" width="1200"></div>
+<div class="hero__overlay"></div>
+<div class="container">
+<div class="hero__content fade-up">
+<p class="hero__subtitle">Our Story</p>
+<h1 class="hero__title">About Carolina Audiology Associates</h1>
+<p class="hero__text">Locally owned, doctor-led hearing care in Rocky Mount since 1988.</p>
 
-<section class="page-header">
-  <div class="container">
-    <h1>About Carolina Audiology Associates</h1>
-    <p>Locally owned, doctor-led hearing care in Rocky Mount since 1988.</p>
-  </div>
+</div>
+</div>
 </section>
-
-<section>
-  <div class="container">
-    <div class="about-block">
-      <div class="about-img">
-        <img src="assets/img/dr-melissa-palmer.jpg" alt="Dr. Melissa Palmer, Au.D., Owner of Carolina Audiology Associates">
-      </div>
-      <div>
-        <span class="eyebrow" style="color: var(--gold); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem;">Meet Your Audiologist</span>
-        <h2 style="margin-top: 0.5rem;">Dr. Melissa Palmer, <span class="accent" style="color: var(--teal);">Au.D.</span></h2>
-        <p>Dr. Melissa Palmer is the Owner and Audiologist at Carolina Audiology Associates. She leads a team that provides personalized hearing care for adults and families in Rocky Mount, Nashville, Wilson, Tarboro, Spring Hope, Roanoke Rapids, and surrounding communities across eastern North Carolina.</p>
-        <p>Her approach is intentional, warm, and educational. Patients leave appointments understanding what is happening with their hearing and why each recommendation makes sense. Family members are welcomed into the conversation, because hearing loss is rarely a one-person experience.</p>
-        <p class="signature">Helping you hear what matters most.</p>
-      </div>
-    </div>
-  </div>
+<section class="section">
+<div class="container">
+<div class="split">
+<div class="split__img fade-up"><img alt="Dr. Melissa Palmer, Au.D., Owner of Carolina Audiology Associates" src="assets/img/dr-melissa-palmer.jpg"></div>
+<div class="split__content fade-up">
+<p class="section-header__label">Meet Your Audiologist</p>
+<h2>Dr. Melissa Palmer, Au.D.</h2>
+<p>Dr. Melissa Palmer is the Owner and Audiologist at Carolina Audiology Associates. She leads a team that provides personalized hearing care for adults and families in Rocky Mount, Nashville, Wilson, Tarboro, Spring Hope, Roanoke Rapids, and surrounding communities across eastern North Carolina.</p>
+<p>Her approach is intentional, warm, and educational. Patients leave appointments understanding what is happening with their hearing and why each recommendation makes sense. Family members are welcomed into the conversation, because hearing loss is rarely a one-person experience.</p>
+<p><em>Helping you hear what matters most.</em></p>
+</div>
+</div>
+</div>
 </section>
-
-<section class="alt">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">What Drives Us</span>
-      <h2>Our Mission and Vision</h2>
-    </div>
-    <div style="max-width: 820px; margin: 0 auto;">
-      <div style="background: var(--white); padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow); margin-bottom: 1.5rem; border-left: 4px solid var(--teal);">
-        <h3 style="color: var(--teal); margin-bottom: 0.75rem;">Our Mission</h3>
-        <p style="font-size: 1.15rem; margin: 0;">To improve our patients' quality of life through better hearing, clear communication, and compassionate personalized care.</p>
-      </div>
-      <div style="background: var(--white); padding: 2.5rem; border-radius: 16px; box-shadow: var(--shadow); border-left: 4px solid var(--gold);">
-        <h3 style="color: var(--teal); margin-bottom: 0.75rem;">Our Vision</h3>
-        <p style="font-size: 1.15rem; margin: 0;">To empower our community through education and engagement, ensuring that personalized hearing healthcare is accessible to all.</p>
-      </div>
-    </div>
-  </div>
+<section class="section section--alt">
+<div class="container">
+<div class="section-header fade-up">
+<p class="section-header__label">What Drives Us</p>
+<h2 class="section-header__title">Our Mission and Vision</h2>
+</div>
+<div class="grid-2">
+<div class="testimonial fade-up"><h3 class="card__title">Our Mission</h3><p class="testimonial__text" style="font-style:normal;">To improve our patients' quality of life through better hearing, clear communication, and compassionate personalized care.</p></div>
+<div class="testimonial fade-up"><h3 class="card__title">Our Vision</h3><p class="testimonial__text" style="font-style:normal;">To empower our community through education and engagement, ensuring that personalized hearing healthcare is accessible to all.</p></div>
+</div>
+</div>
 </section>
-
-<section>
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Our Values</span>
-      <h2>What You Can Expect Here</h2>
-    </div>
-    <div class="values-grid">
-      <div class="value">
-        <h3>Ownership &amp; Leadership</h3>
-        <p>Locally owned and locally led. Dr. Palmer is in the office, accountable for the care you receive. Decisions are made for you, not for a corporate quota.</p>
-      </div>
-      <div class="value">
-        <h3>Personalization</h3>
-        <p>No two ears, no two lives, no two hearing journeys are identical. Every plan we build starts with the specifics of who you are and how you want to live.</p>
-      </div>
-      <div class="value">
-        <h3>Community Engagement</h3>
-        <p>We are committed to making hearing healthcare accessible and well-understood across eastern North Carolina, through education, events, and honest conversation.</p>
-      </div>
-    </div>
-  </div>
+<section class="section">
+<div class="container">
+<div class="section-header fade-up">
+<p class="section-header__label">Our Values</p>
+<h2 class="section-header__title">What You Can Expect Here</h2>
+</div>
+<div class="grid-3">
+<div class="card fade-up"><h3 class="card__title">Ownership &amp; Leadership</h3><p class="card__text">Locally owned and locally led. Dr. Palmer is in the office, accountable for the care you receive. Decisions are made for you, not for a corporate quota.</p></div>
+<div class="card fade-up"><h3 class="card__title">Personalization</h3><p class="card__text">No two ears, no two lives, no two hearing journeys are identical. Every plan we build starts with the specifics of who you are and how you want to live.</p></div>
+<div class="card fade-up"><h3 class="card__title">Community Engagement</h3><p class="card__text">We are committed to making hearing healthcare accessible and well-understood across eastern North Carolina, through education, events, and honest conversation.</p></div>
+</div>
+</div>
 </section>
-
-<section class="alt">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Visit Us</span>
-      <h2>Our Rocky Mount Office</h2>
-      <p>Conveniently located at 4065 Capital Drive, with on-site parking and a warm, family-friendly waiting area.</p>
-    </div>
-    <div style="max-width: 900px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: var(--shadow-lg);">
-      <img src="assets/img/office-exterior.jpg" alt="Carolina Audiology Associates office building in Rocky Mount, NC" style="width: 100%;">
-    </div>
-  </div>
+<section class="section section--alt">
+<div class="container">
+<div class="section-header fade-up">
+<p class="section-header__label">Visit Us</p>
+<h2 class="section-header__title">Our Rocky Mount Office</h2>
+<p class="section-header__desc">Conveniently located at 4065 Capital Drive, with on-site parking and a warm, family-friendly waiting area.</p>
+</div>
+<div style="max-width:900px;margin:0 auto;border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-lg);"><img alt="Carolina Audiology Associates office building in Rocky Mount, NC" src="assets/img/office-exterior.jpg" style="width:100%;"></div>
+</div>
 </section>
-
-<section class="cta-banner">
-  <div class="container">
-    <h2>Come See What We Are About</h2>
-    <p>Book your consultation and meet the team that has served eastern NC since 1988.</p>
-    <a href="contact.html#book" class="btn btn-gold">Book Your Appointment</a>
-  </div>
+<section class="cta-band">
+<div class="container">
+<h2>Come See What We Are About</h2>
+<p>Book your consultation and meet the team that has served eastern NC since 1988.</p>
+<div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+<a class="btn btn--white btn--large" href="contact.html#book">Book Your Appointment</a>
+<a class="btn btn--outline btn--large" href="tel:+12527906649" style="border-color:#fff;color:#fff !important;">Call 252-790-6649</a>
+</div>
+</div>
 </section>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo"><img src="assets/img/logo.png" alt="Carolina Audiology Associates"></div>
-        <p class="footer-tag">Family-centered hearing care, helping you hear what matters most. Serving eastern North Carolina since 1988.</p>
-      </div>
-      <div>
-        <h4>Visit Us</h4>
-        <ul>
-          <li>4065 Capital Drive</li>
-          <li>Rocky Mount, NC 27804</li>
-          <li><a href="tel:+12527906649">252-790-6649</a></li>
-          <li><a href="mailto:info@carolinaaud.com">info@carolinaaud.com</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Hours</h4>
-        <ul>
-          <li>Monday: 9:00 to 5:00</li>
-          <li>Tuesday: 9:00 to 5:00</li>
-          <li>Wednesday: 9:00 to 5:00</li>
-          <li>Thursday: 9:00 to 5:00</li>
-          <li>Fri to Sun: Closed</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Dr. Palmer</a></li>
-          <li><a href="education.html">Hearing Education</a></li>
-          <li><a href="contact.html">Contact &amp; Booking</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright">
-      &copy; 1988 to 2026 Carolina Audiology Associates. All rights reserved.
-    </div>
-  </div>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer__grid">
+<div class="footer__brand">
+<img alt="Carolina Audiology Associates" src="assets/img/logo.png" style="height:60px;width:auto;">
+<p>Family-centered hearing care, helping you hear what matters most. Serving eastern North Carolina since 1988.</p>
+</div>
+<div>
+<h3 class="footer__heading">Quick Links</h3>
+<div class="footer__links">
+<a href="index.html">Home</a>
+<a href="about.html">About Dr. Palmer</a>
+<a href="services.html">Services</a>
+<a href="education.html">Hearing Education</a>
+<a href="contact.html">Contact &amp; Booking</a>
+</div>
+</div>
+<div>
+<h3 class="footer__heading">Services</h3>
+<div class="footer__links">
+<a href="services.html#evaluations">Hearing Evaluations</a>
+<a href="services.html#fittings">Hearing Aid Fittings</a>
+<a href="services.html#repair">Hearing Aid Repair</a>
+<a href="services.html#wax">Earwax Removal</a>
+<a href="services.html#protection">Custom Ear Protection</a>
+</div>
+</div>
+<div>
+<h3 class="footer__heading">Contact Us</h3>
+<div class="footer__contact-item"><span>4065 Capital Drive<br>Rocky Mount, NC 27804</span></div>
+<div class="footer__contact-item"><a href="tel:+12527906649">252-790-6649</a></div>
+<div class="footer__contact-item"><a href="mailto:info@carolinaaud.com">info@carolinaaud.com</a></div>
+<div class="footer__contact-item"><span>Mon to Thu: 9:00 to 5:00<br>Fri to Sun: Closed</span></div>
+</div>
+</div>
+<div class="footer__bottom">
+<p>&copy; 1988 to 2026 Carolina Audiology Associates. All rights reserved.</p>
+</div>
+</div>
 </footer>
-
-<script src="assets/js/main.js"></script>
+<script src="assets/js/layout.js"></script>
 </body>
 </html>

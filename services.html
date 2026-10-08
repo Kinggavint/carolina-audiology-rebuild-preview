@@ -8,134 +8,151 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/layout.css">
 </head>
 <body>
-
-<div class="topbar">
-  <div class="container">
-    <span>4065 Capital Drive, Rocky Mount, NC 27804</span>
-    <span><a href="tel:+12527906649">252-790-6649</a> &nbsp;|&nbsp; Mon to Thu, 9 to 5</span>
-  </div>
+<!-- Top Bar -->
+<div class="top-bar">
+<div class="container">
+<div class="top-bar__left">
+<span class="top-bar__item"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> 4065 Capital Drive, Rocky Mount, NC 27804</span>
+<span class="top-bar__item"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><a href="tel:+12527906649">252-790-6649</a></span>
 </div>
-
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Carolina Audiology Associates"></a>
-    <button class="menu-toggle" aria-label="Menu">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="contact.html#book" class="btn btn-primary">Book Appointment</a></li>
-    </ul>
-  </div>
+<div class="top-bar__right">
+<a class="top-bar__cta top-bar__cta--gold" href="contact.html#book"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="18" rx="2" ry="2" width="18" x="3" y="4"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg> Book Appointment</a>
+<a class="top-bar__cta" href="tel:+12527906649"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Call Us</a>
+</div>
+</div>
+</div>
+<!-- Header -->
+<header class="header">
+<div class="container">
+<a aria-label="Carolina Audiology Associates Home" class="header__logo" href="index.html"><img alt="Carolina Audiology Associates logo" src="assets/img/logo.png" style="height:54px;width:auto;"></a>
+<nav aria-label="Main navigation" class="header__nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<div class="nav-dropdown">
+<a class="nav-dropdown__trigger" href="services.html">Services</a>
+<div class="nav-dropdown__menu">
+<a href="services.html#evaluations">Hearing Evaluations</a>
+<a href="services.html#fittings">Hearing Aid Fittings</a>
+<a href="services.html#repair">Hearing Aid Repair</a>
+<a href="services.html#wax">Earwax Removal</a>
+<a href="services.html#protection">Custom Ear Protection</a>
+<a href="services.html#counseling">Family Counseling</a>
+</div>
+</div>
+<a href="education.html">Education</a>
+<a href="contact.html">Contact</a>
+<a aria-label="Call 252-790-6649" class="header__phone" href="tel:+12527906649"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 252-790-6649</a>
+</nav>
+<button aria-expanded="false" aria-label="Toggle navigation menu" class="header__mobile-toggle"><span></span></button>
+</div>
+<div class="mobile-overlay"></div>
 </header>
+<section class="hero hero--short">
+<div class="hero__bg"><img alt="Grandmother and granddaughter" height="600" src="assets/img/hero-grandparent-child.jpg" width="1200"></div>
+<div class="hero__overlay"></div>
+<div class="container">
+<div class="hero__content fade-up">
+<p class="hero__subtitle">Doctor-Led Care</p>
+<h1 class="hero__title">Our Hearing Services</h1>
+<p class="hero__text">Doctor-led care for every step of your hearing journey, from your first evaluation to ongoing follow-up.</p>
 
-<section class="page-header">
-  <div class="container">
-    <h1>Our Hearing Services</h1>
-    <p>Doctor-led care for every step of your hearing journey, from your first evaluation to ongoing follow-up.</p>
-  </div>
+</div>
+</div>
 </section>
-
-<section>
-  <div class="container">
-    <div id="evaluations" style="max-width: 820px; margin: 0 auto 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-      <span class="eyebrow" style="color: var(--gold); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem;">01 &nbsp; Diagnostic Care</span>
-      <h2 style="margin-top: 0.5rem;">Comprehensive Hearing Evaluations</h2>
+<section class="section">
+<div class="container">
+<div class="svc-block fade-up" id="evaluations">
+<p class="section-header__label">01   Diagnostic Care</p>
+<h2>Comprehensive Hearing Evaluations</h2>
       <p>Your hearing tells a story, and we take the time to listen to all of it. A comprehensive hearing evaluation at Carolina Audiology Associates includes a careful health history, otoscopy, pure-tone testing, speech testing, and middle-ear measurements. Every evaluation is performed and reviewed by a Doctor of Audiology.</p>
       <p>You leave knowing exactly where your hearing stands today and what your options are, with no pressure and no sales tactics. If you do not need hearing aids, we will tell you so.</p>
-    </div>
-
-    <div id="fittings" style="max-width: 820px; margin: 0 auto 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-      <span class="eyebrow" style="color: var(--gold); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem;">02 &nbsp; Treatment</span>
-      <h2 style="margin-top: 0.5rem;">Hearing Aid Fittings &amp; Follow-Up Care</h2>
+</div>
+<div class="svc-block fade-up" id="fittings">
+<p class="section-header__label">02   Treatment</p>
+<h2>Hearing Aid Fittings &amp; Follow-Up Care</h2>
       <p>When advanced hearing technology is the right path, we fit each device precisely to your ears, your lifestyle, and the listening environments you live in. We work with ReSound, Oticon, Signia, Starkey, Widex, and Phonak, with strong service and warranty support behind every fitting.</p>
       <p>Follow-up is not an afterthought here. Your fitting includes a full schedule of follow-up visits so we can fine-tune the settings as your brain adjusts and as your life changes. You will not be handed a box and sent home.</p>
-    </div>
-
-    <div id="repair" style="max-width: 820px; margin: 0 auto 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-      <span class="eyebrow" style="color: var(--gold); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem;">03 &nbsp; Service</span>
-      <h2 style="margin-top: 0.5rem;">Hearing Aid Repair</h2>
+</div>
+<div class="svc-block fade-up" id="repair">
+<p class="section-header__label">03   Service</p>
+<h2>Hearing Aid Repair</h2>
       <p>Hearing aids work hard. Wax, moisture, and daily wear take a toll, and even the best devices sometimes need attention. We clean, troubleshoot, and repair most major hearing aid brands in our Rocky Mount office, including aids that were not originally purchased from us.</p>
       <p>For repairs that require the manufacturer, we coordinate the entire process for you, so you are not left chasing service tickets.</p>
-    </div>
-
-    <div id="wax" style="max-width: 820px; margin: 0 auto 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-      <span class="eyebrow" style="color: var(--gold); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem;">04 &nbsp; Ear Health</span>
-      <h2 style="margin-top: 0.5rem;">Earwax Removal</h2>
+</div>
+<div class="svc-block fade-up" id="wax">
+<p class="section-header__label">04   Ear Health</p>
+<h2>Earwax Removal</h2>
       <p>Impacted earwax is one of the most common and most overlooked causes of muffled hearing. Our team performs safe, gentle earwax removal under direct visualization, using techniques chosen for the health and comfort of your ear canal.</p>
       <p>Many patients are surprised by how much clearer everything sounds the moment a blockage is removed.</p>
-    </div>
-
-    <div id="protection" style="max-width: 820px; margin: 0 auto 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-      <span class="eyebrow" style="color: var(--gold); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem;">05 &nbsp; Prevention</span>
-      <h2 style="margin-top: 0.5rem;">Custom Ear Protection</h2>
+</div>
+<div class="svc-block fade-up" id="protection">
+<p class="section-header__label">05   Prevention</p>
+<h2>Custom Ear Protection</h2>
       <p>The best hearing aid is the one you never need. Custom-molded ear protection is designed around your unique ear anatomy and the specific environment you are protecting against, whether that is a worksite, a hunting blind, a concert stage, or a swimming pool.</p>
       <p>Musicians, hunters, swimmers, motorcyclists, and industrial workers all benefit from protection that actually fits, seals, and stays in place.</p>
-    </div>
-
-    <div id="counseling" style="max-width: 820px; margin: 0 auto;">
-      <span class="eyebrow" style="color: var(--gold); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem;">06 &nbsp; Family Support</span>
-      <h2 style="margin-top: 0.5rem;">Family-Centered Counseling</h2>
+</div>
+<div class="svc-block fade-up" id="counseling">
+<p class="section-header__label">06   Family Support</p>
+<h2>Family-Centered Counseling</h2>
       <p>Hearing loss is rarely just one person's issue. Spouses, children, and grandchildren all feel it. We invite loved ones into the conversation and teach communication strategies that take pressure off the person with hearing loss and improve connection for everyone at the table.</p>
-    </div>
-  </div>
-</section>
+</div>
 
-<section class="cta-banner">
-  <div class="container">
-    <h2>Not Sure Which Service You Need?</h2>
-    <p>Schedule a consultation and we will walk through it together.</p>
-    <a href="contact.html#book" class="btn btn-gold">Book Your Appointment</a>
-  </div>
+</div>
 </section>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo"><img src="assets/img/logo.png" alt="Carolina Audiology Associates"></div>
-        <p class="footer-tag">Family-centered hearing care, helping you hear what matters most. Serving eastern North Carolina since 1988.</p>
-      </div>
-      <div>
-        <h4>Visit Us</h4>
-        <ul>
-          <li>4065 Capital Drive</li>
-          <li>Rocky Mount, NC 27804</li>
-          <li><a href="tel:+12527906649">252-790-6649</a></li>
-          <li><a href="mailto:info@carolinaaud.com">info@carolinaaud.com</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Hours</h4>
-        <ul>
-          <li>Monday: 9:00 to 5:00</li>
-          <li>Tuesday: 9:00 to 5:00</li>
-          <li>Wednesday: 9:00 to 5:00</li>
-          <li>Thursday: 9:00 to 5:00</li>
-          <li>Fri to Sun: Closed</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About Dr. Palmer</a></li>
-          <li><a href="education.html">Hearing Education</a></li>
-          <li><a href="contact.html">Contact &amp; Booking</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright">
-      &copy; 1988 to 2026 Carolina Audiology Associates. All rights reserved.
-    </div>
-  </div>
+<section class="cta-band">
+<div class="container">
+<h2>Not Sure Which Service You Need?</h2>
+<p>Schedule a consultation and we will walk through it together.</p>
+<div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+<a class="btn btn--white btn--large" href="contact.html#book">Book Your Appointment</a>
+<a class="btn btn--outline btn--large" href="tel:+12527906649" style="border-color:#fff;color:#fff !important;">Call 252-790-6649</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer__grid">
+<div class="footer__brand">
+<img alt="Carolina Audiology Associates" src="assets/img/logo.png" style="height:60px;width:auto;">
+<p>Family-centered hearing care, helping you hear what matters most. Serving eastern North Carolina since 1988.</p>
+</div>
+<div>
+<h3 class="footer__heading">Quick Links</h3>
+<div class="footer__links">
+<a href="index.html">Home</a>
+<a href="about.html">About Dr. Palmer</a>
+<a href="services.html">Services</a>
+<a href="education.html">Hearing Education</a>
+<a href="contact.html">Contact &amp; Booking</a>
+</div>
+</div>
+<div>
+<h3 class="footer__heading">Services</h3>
+<div class="footer__links">
+<a href="services.html#evaluations">Hearing Evaluations</a>
+<a href="services.html#fittings">Hearing Aid Fittings</a>
+<a href="services.html#repair">Hearing Aid Repair</a>
+<a href="services.html#wax">Earwax Removal</a>
+<a href="services.html#protection">Custom Ear Protection</a>
+</div>
+</div>
+<div>
+<h3 class="footer__heading">Contact Us</h3>
+<div class="footer__contact-item"><span>4065 Capital Drive<br>Rocky Mount, NC 27804</span></div>
+<div class="footer__contact-item"><a href="tel:+12527906649">252-790-6649</a></div>
+<div class="footer__contact-item"><a href="mailto:info@carolinaaud.com">info@carolinaaud.com</a></div>
+<div class="footer__contact-item"><span>Mon to Thu: 9:00 to 5:00<br>Fri to Sun: Closed</span></div>
+</div>
+</div>
+<div class="footer__bottom">
+<p>&copy; 1988 to 2026 Carolina Audiology Associates. All rights reserved.</p>
+</div>
+</div>
 </footer>
-
-<script src="assets/js/main.js"></script>
+<script src="assets/js/layout.js"></script>
 </body>
 </html>
